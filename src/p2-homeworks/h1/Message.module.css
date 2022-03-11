@@ -1,0 +1,49 @@
+.message {
+    display: flex;
+    align-items: end;
+    margin: 20px 0 ;
+    background-color: greenyellow;
+}
+
+.dialog {
+    position: relative;
+    max-width: 450px;
+    background-color: darkslateblue;
+    margin: 5px;
+    border-radius: 15px 15px 15px 0;
+    color: white;
+    padding: 10px 10px 0 10px;
+    opacity: 0.7;
+}
+
+.dialog::after {
+    position: absolute;
+    content: '';
+    left: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid darkslateblue;
+    border-left: 20px solid transparent;
+}
+
+.ava img{
+    width: 95px;
+    height: 95px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+.ava {
+    margin: 0 20px 0 20px ;
+}
+.user {
+    margin: 0;
+    font-size: 1.5em;
+    color: greenyellow;
+}
+.time {
+    float: right;
+    margin-top: 25px;
+    color: black;
+    margin-right: 10px;
+}
