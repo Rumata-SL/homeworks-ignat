@@ -40,6 +40,7 @@
     margin: 0;
     font-size: 1.5em;
     color: greenyellow;
+    text-align: left;
 }
 .time {
     float: right;
