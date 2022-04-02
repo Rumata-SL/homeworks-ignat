@@ -5,23 +5,18 @@ import h from "./Header.module.css"
 function Header() {
     return (
         <div className={h.wrapperHeader}>
-            {/*<div className={h.containerButton}>*/}
-            {/*    <button>hover my</button>*/}
-            {/*</div>*/}
+
             <div>
-            <ul className={h.menu}>
-                <li className={h.current}><a href="#">nav</a></li>
-            </ul>
-
-            </div>
-
-            <div className={h.containerNav}>
-
                 <ul className={h.menu}>
-                    <li><NavLink className={h.current} to={"/pre-junior"}>Pre_Junior</NavLink></li>
-                    <li><NavLink to={"/junior"}>Junior</NavLink></li>
-                    <li><NavLink to={"/junior-plus"}>Junior_Plus</NavLink></li>
+                    <li className={h.current}><NavLink to={"/pre-junior"}>NAV</NavLink></li>
+
+                        <ul className={`${h.menu} ${h.submenu}`}>
+                            <li><NavLink to={"/pre-junior"}>Pre_Junior</NavLink></li>
+                            <li><NavLink to={"/junior"}>Junior</NavLink></li>
+                            <li><NavLink to={"/junior-plus"}>Junior_Plus</NavLink></li>
+                        </ul>
                 </ul>
+
             </div>
 
             {/*// add NavLinks*/}

@@ -30,5 +30,19 @@
     font-family: sans-serif;
     color: white;
 }
+.submenu{
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: .7s ease-in-out;
+}
+.current:hover + .submenu{
+    transform: scaleX(1);
+}
+.submenu:hover{
+    transform: scaleX(1);
+}
 
-.menu a:hover {background: rgba(0,0,0,.2);}
+a:hover {
+    background: rgba(0,0,0,.2);
+}
+
