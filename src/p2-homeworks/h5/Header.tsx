@@ -8,7 +8,7 @@ function Header() {
 
             <div>
                 <ul className={h.menu}>
-                    <li className={h.current}><NavLink to={"/pre-junior"}>NAV</NavLink></li>
+                    <li className={h.current}><NavLink to={"/pre-junior"}>Hover me</NavLink></li>
 
                         <ul className={`${h.menu} ${h.submenu}`}>
                             <li><NavLink to={"/pre-junior"}>Pre_Junior</NavLink></li>

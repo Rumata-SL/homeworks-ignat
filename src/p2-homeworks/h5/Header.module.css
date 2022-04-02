@@ -11,14 +11,7 @@
     margin: 0;
     text-align: center;
 }
-.menu:before {
-    left: -30px;
-    border-left: 12px solid rgba(255, 255, 255, 0);
-}
-.menu:after {
-    right: -30px;
-    border-right: 12px solid rgba(255, 255, 255, 0);
-}
+
 .menu li {
     display: inline-block;
     margin-right: 4px;
@@ -27,7 +20,8 @@
     text-decoration: none;
     display: inline-block;
     padding: 15px 30px;
-    font-family: sans-serif;
+    font-size: 1.3em;
+    font-family: "Segoe Print";
     color: white;
 }
 .submenu{
@@ -43,6 +37,15 @@
 }
 
 a:hover {
+    transform: scale(1.1);
+    transition: transform 0.9s;
+    border-radius: 5px;
     background: rgba(0,0,0,.2);
 }
+/*a:hover {*/
+/*    font-size: 1.5em;*/
+/*    padding: 10px 25px;*/
+/*    background: rgba(0,0,0,.2);*/
+/*    border-radius: 5px;*/
+/*}*/
 
