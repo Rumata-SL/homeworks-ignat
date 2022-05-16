@@ -3,6 +3,7 @@ import HW7 from "../../h7/HW7";
 import HW8 from "../../h8/HW8";
 import HW9 from "../../h9/HW9";
 import HW10 from "../../h10/HW10";
+import HW111 from "../../h11/HW111";
 
 const Junior = () => {
     return (
@@ -12,6 +13,7 @@ const Junior = () => {
             <HW8/>
             <HW9/>
             <HW10/>
+            <HW111/>
         </div>
     );
 };
