@@ -24,9 +24,11 @@ function HW11() {
 
 
             {/*should work (должно работать)*/}
+            <span className={'rangeValue'} style={{marginRight:'30px',boxSizing:'border-box', width:'50px'}}>{value1}</span>
             <SuperRange value={value1}
                         onChangeRange={onSuperRangeChange}
             />
+            <span className={'rangeValue'} style={{marginLeft:'30px',boxSizing:'border-box', width:'50px'}}>{value2}</span>
             {/*<div className={'rangeSliderBox'} style={{width:'30%', margin:'0 auto'}}>
                 <span className={'rangeValue'}>{value1}</span>
                 <Slider className={'doubleRange'}
@@ -36,20 +38,47 @@ function HW11() {
                         handleStyle={{borderColor: 'blueviolet', backgroundColor: 'blue'}}
                         trackStyle ={{backgroundColor: 'blueviolet'}}
                 />
+            <span className={'rangeValue'}>{value2}</span>
 
             </div>*/}
 
-            <div className={'rangeSliderBox'} style={{width:'13%',margin:'0 auto'}}>
-                <span className={'rangeValue'}>{value1}</span>
-                <Range value={[value1, value2]}
-                       className={'doubleRange'}
-                       railStyle={{backgroundColor: 'blue',height:'50%'}}
-                       handleStyle={[{borderColor: 'blueviolet', backgroundColor: 'blue'}, {borderColor: 'blueviolet', backgroundColor: 'blue'}]}
-                       trackStyle ={[{backgroundColor: 'blueviolet'}]}
-                       allowCross={false}
-                       onChange={onSuperDoubleRangeChange}/>
-                <span className={'rangeValue'}>{value2}</span>
+
+            <div style={{display:'flex',flexDirection:'row', justifyContent:'center',boxSizing:'border-box'}}>
+                <div className={"rangeSliderBox"}
+                     style={{
+                         width: "400px",
+                         display: "flex",
+                         flexDirection: "row",
+                         justifyContent: "center",
+                         alignItems: "center",
+                         boxSizing:'border-box'
+                     }}>
+                    <div className={"rangeValue"} style={{marginRight:'30px',boxSizing:'border-box', width:'50px'}}>{value1}</div>
+                    <Range value={[value1, value2]}
+                           className={"doubleRange"}
+                           railStyle={{
+                               backgroundColor: "blue",
+                               borderColor: "blue",
+                           }}
+                           handleStyle={[{
+                               borderColor: "blue",
+                               backgroundColor: "blue"
+                           }, {
+                               borderColor: "blue",
+                               backgroundColor: "blue"
+                           }]}
+                           trackStyle={[{
+                               backgroundColor: "white",
+                               borderColor: "white",
+
+                           }]}
+                           allowCross={false}
+                           onChange={onSuperDoubleRangeChange}/>
+                    <span className={"rangeValue"} style={{marginLeft:'30px',boxSizing:'border-box', width:'50px'}}>{value2}</span>
+                </div>
             </div>
+
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
