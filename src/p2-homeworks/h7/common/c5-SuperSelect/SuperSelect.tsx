@@ -24,7 +24,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     }
 
     return (
-        <select onChange={onChangeCallback} {...restProps}>
+        <select onChange={onChangeCallback} {...restProps} style={{width:"250px"}}>
             {mappedOptions}
         </select>
     )
