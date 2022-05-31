@@ -38,7 +38,6 @@ export const Request = () => {
     }
     return (
         <div>
-            {/*{loading && <Preloader/>}*/}
             {
                 loading
                     ? (<Preloader/>)
